@@ -70,8 +70,7 @@ class TabCard {
   selectCard(){
     console.log("The selectCard() method from the TABCARD class has been triggered from the selectTab() method!");
     // Update the style of this.cardElement to display = "flex"
-    // this.cardElement.style.display = 'flex';
-    // console.log(this.cardElement.style);
+    this.cardElement.style.display = 'flex';
   }
 
 }
