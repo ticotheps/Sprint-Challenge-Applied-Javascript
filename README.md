@@ -1,5 +1,6 @@
 # Sprint-Challenge Applied Javascript - Lambda Times
 
+
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored the DOM and the concept of components. During this Sprint, you studied the DOM, DOM Events, and Components. In your challenge this week, you will demonstrate proficiency by creating an online Lambda newspaper called "Lambda Times."
 
 ## Instructions
@@ -32,13 +33,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    The technical definition of the “DOM” (Document Object Model) is 'an object representation of the HTML elements of a web page.’ However, it is important to remember that the DOM is only a REPRESENTATION of the HTML elements; it is NOT the actual HTML elements themselves. Another way to look at the DOM is viewing it like an API (Application Programming Interface), or like a bridge between the HTML content and the WEB BROWSER. It provides an interface with which two entities, of differing ways of communication, can understand one another. The best analogy, for the DOM, that I have constructed in my own mind is comparing it to the concept of how a writer uses their writing (i.e. - books, essays, articles, etc.) as a way to communicate their thoughts/ideas to a reader. So, the DOM in this analogy would be the books/essays/articles, which, are NOT the ACTUAL thoughts/ideas from inside the writer’s mind (only a visual REPRESENTATION of those thoughts/ideas), just like the DOM is NOT the actual HTML elements themselves (but also only a REPRESENTATION of them).
+
 2. What is an event?
+
+    An ‘event’ is any instance in which a user interacts with a website. When the web browser recognizes that event, it is represented in the DOM as an object. For example, when a user visits a website and clicks on a navigation link (with an event listener on it), that click will trigger the browser into recognizing that a ‘click event’ has occurred and thens store it as an object in the DOM.
 
 3. What is an event listener?
 
+    An ‘event listener’ is the combination of selecting a specific user interaction [with a website] to detect and then firing a specified callback function once that user interaction is detected. For instance, an event listener could be set to listen for any clicks on only the navigation links of a web page with the class ‘.nav-link’, which would then fire a callback function, printing “A navigation link was clicked!” to the console.
+
 4. Why would we convert a NodeList into an Array?
 
+    A NodeList, along with an HTMLCollection, is an ‘array-like’ object. This means that it has ‘array-like’ properties, BUT it is not an array, which means that it does not have access to ALL of the built-in methods that normal arrays have. NodeLists, unlike HTMLCollections, do come pre-built with the capability to utilize the ‘.forEach( )’ method. However, if we use the ‘Array.from( )’ method, we can convert a NodeList into an ACTUAL array, which would give us FULL access to all of the built-in methods for normal arrays (i.e. - ‘.push( )’ method).
+
 5. What is a component?
+
+    Components are what allow developers to reuse code throughout a website. A ‘component’ is modular and can be made up of several parts, which could include: HTML, CSS, and JavaScript. Components improve efficiency and allow developers to write ‘DRY’ code.
 
 ### Git Set up
 
